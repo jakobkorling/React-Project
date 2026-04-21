@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    background: rgb(242, 242, 176);
+    color: rgb(255, 72, 17);
+}
+
+.container {
+    padding: 40px;
+    text-align: center;
+}
+
+.grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+h1 {
+    color: #fb7188;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #ff6152;
+    font-weight: bold;
+    margin-top: 10px;
+}
