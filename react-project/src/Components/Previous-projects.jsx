@@ -30,7 +30,7 @@ function PreviousProjects()
                 tech="HTML, CSS"
                 description="Recreated a Figma design"
                 function="A normal website"
-                learned="Creating a good looking gallery with grid"
+                learned="Creating reusable code"
                 role="Solo"
                 challenges="Creating reusable content cards"
             />
