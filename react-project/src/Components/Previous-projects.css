@@ -27,3 +27,22 @@ h2 {
     font-weight: bold;
     margin-top: 10px;
 }
+
+/* Navbar */
+
+nav {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background: #1e293b;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
