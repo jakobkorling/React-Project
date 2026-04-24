@@ -14,7 +14,7 @@ function ProjectCard({
     return (
         <div className="card">
             <div className="card-content">
-                <h2>{name}</h2>
+                <h3>{name}</h3>
 
                 <p>{description}</p>
 

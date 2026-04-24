@@ -1,7 +1,7 @@
 body {
     margin: 0;
-    background: rgb(242, 242, 176);
-    color: rgb(255, 72, 17);
+    background: #f2f2b0;
+    color: white;
 }
 
 .container {
@@ -17,15 +17,20 @@ body {
 }
 
 h1 {
-    color: #fb7188;
+    color: #e37125;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 h2 {
-    color: #ff6152;
+    color: #e37125;
     font-weight: bold;
     margin-top: 10px;
+}
+
+h3 {
+    color: white;
+    font-weight: bold;
 }
 
 /* Navbar */
@@ -34,7 +39,7 @@ nav {
     display: flex;
     gap: 20px;
     padding: 20px;
-    background: #1e293b;
+    background:#e37125;
 }
 
 nav a {
@@ -44,5 +49,26 @@ nav a {
 }
 
 nav a:hover {
-    color: #38bdf8;
+    color: #f2f2b0;
+}
+
+.portfolio-container {
+    padding: 40px;
+    text-align: center;
+}
+
+button {
+    padding: 12px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background: #e37125;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
 }

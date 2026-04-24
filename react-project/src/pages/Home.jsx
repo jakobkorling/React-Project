@@ -1,10 +1,8 @@
-import PreviousProjects from "../Components/Previous-projects.jsx";
 
 function Home () {
     return(
         <div>
-            <h2>Homepage</h2>
-            <PreviousProjects></PreviousProjects>
+            <h2 className="projects-title">Homepage</h2>
         </div>
     )    
 }
