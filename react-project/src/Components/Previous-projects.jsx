@@ -1,11 +1,15 @@
 import "./Previous-projects.css"
 import ProjectCard from "./Project-card";
+import { useState } from "react";
+import ProjectPopup from "./Project-Popup";
+
 import genesisImg from "../images/Genesis.png";
 import testImg from "../images/Test-skills.png";
 import verdeImg from "../images/Verde-ink.png";
 
 function PreviousProjects()
  {
+    const [selectedProject, setSelectedProject] = useState(null);
       return (
     <div className="container">
         <h1>My Portfolio</h1>
@@ -21,6 +25,19 @@ function PreviousProjects()
                 learned="Creating a good looking gallery with grid"
                 role="Solo"
                 challenges="Figuring out the positioning of the grid items"
+                onClick={() =>
+                    setSelectedProject({
+                        name: "Genesis",
+                        screenshot: genesisImg,
+                        github: "https://github.com/jakobkorling/Genesis-Project.git",
+                        tech: "HTML, CSS",
+                        description: "Recreated a Figma design",
+                        function: "A normal website",
+                        learned: "Creating a gallery",
+                        role: "Solo",
+                        challenges: "Figuring out the positioning of the grid items",
+                    })
+                }
             />
 
             <ProjectCard
@@ -33,6 +50,19 @@ function PreviousProjects()
                 learned="Creating reusable code"
                 role="Solo"
                 challenges="Creating reusable content cards"
+                 onClick={() =>
+                    setSelectedProject({
+                        name: "Test my skills",
+                        screenshot: testImg,
+                        github: "https://github.com/jakobkorling/Test-my-skills.git",
+                        tech: "HTML, CSS",
+                        description: "Recreated a Figma design",
+                        function: "A normal website",
+                        learned: "Creating reusable code",
+                        role: "Solo",
+                        challenges: "Creating reusable content cards",
+                    })
+                }
             />
 
             <ProjectCard
@@ -45,8 +75,29 @@ function PreviousProjects()
                 learned="Agile work in a group project"
                 role="Group project"
                 challenges="Creating a clean footer"
+                 onClick={() =>
+                    setSelectedProject({
+                        name: "Verde Ink",
+                        screenshot: verdeImg,
+                        github: "https://github.com/ls-95/verde-ink.git",
+                        tech: "HTML, CSS",
+                        description: "Created the gallery and footer",
+                        function: "A normal website",
+                        learned: "Agile work in a group project",
+                        role: "Group project",
+                        challenges: "Creating a clean footer",
+                    })
+                }
             />
         </div>
+        
+        {selectedProject && (
+            <ProjectPopup
+                project={selectedProject}
+                onClose={() => setSelectedProject(null)}
+            />
+        )}
+
     </div>
   )
 }

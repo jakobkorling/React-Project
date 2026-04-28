@@ -9,10 +9,11 @@ function ProjectCard({
     function: projectFunction,
     learned,
     role,
-    challenges
+    challenges,
+    onClick
 }) {
     return (
-        <div className="card">
+        <div className="card" onClick={onClick}>
             <div className="card-content">
                 <h3>{name}</h3>
 
