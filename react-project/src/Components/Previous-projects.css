@@ -52,10 +52,14 @@ nav a:hover {
     color: #f2f2b0;
 }
 
+/* portfolio */
+
 .portfolio-container {
     padding: 40px;
     text-align: center;
 }
+
+/* show projects button */
 
 button {
     padding: 12px 20px;
@@ -71,4 +75,37 @@ button {
 
 button:hover {
     transform: translateY(-3px);
+}
+
+/* search bar */
+
+.search-input {
+    width: 100%;
+    max-width: 500px;
+    padding: 14px 18px;
+    margin: 20px auto 10px;
+    display: block;
+
+    border: 3px solid #e37125;
+    border-radius: 12px;
+    background: white;
+    color: #e37125;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+}
+
+.search-input::placeholder {
+    color: #e37125;
+    opacity: 0.7;
+}
+
+.search-input:focus {
+    box-shadow: 0 0 0 4px #e3712540;
+}
+
+.no-results {
+    color: #e37125;
+    font-weight: bold;
+    margin-top: 30px;
 }
